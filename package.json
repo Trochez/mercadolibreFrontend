@@ -1,0 +1,26 @@
+{
+  "name": "mercadolibre",
+  "version": "1.0.0",
+  "description": "mercado libre test",
+  "main": "mercadolibre.js",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express-async-handler": "^1.1.4",
+    "express-swagger-generator": "^1.1.17",
+    "express": "^4.17.1",
+    "vue": "^2.6.12",
+    "vue-server-renderer": "^2.6.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node mercadolibre.js",
+    "start": "node mercadolibre.js"
+  },
+  "keywords": [
+    "mercadolibre"
+  ],
+  "author": "juan diego trochez montoya",
+  "license": "ISC"
+}

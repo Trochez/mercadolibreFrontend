@@ -1,0 +1,20 @@
+<html>
+<head>
+	
+</head>
+<body class="body" >
+	<div id = "bodyindex">
+
+		<div class="col-sm-1 allheight fleft">
+		
+		</div>
+		<div class="col-sm-10 fleft">
+			<template v-for="product in data.items">  
+				<product_item v-bind:product="product" ></product_item> 
+			</template>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

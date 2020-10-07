@@ -1,0 +1,27 @@
+<div id ="product_template" class="main_product" v-if="product">
+	<a :href="'http://localhost:8899/items/'+product.id">
+		<div class="prd_img fleft col-sm-3">		
+			<img :src="product.picture">	
+		</div>
+		<div class="search fleft col-sm-8 ">	
+			<div>		
+				<label class="col-sm-1 fleft prd_title">{{formatPrice(product.price.amount)}}</label>	
+
+				<template v-if="product.seller">
+
+					<template v-if="product.seller.seller_reputation">
+
+						<div v-if="product.seller.seller_reputation.level_id == '5_green'" class="fleft circle" >
+						</div>	
+						
+					</template>
+					
+				</template>
+							
+			</div>	
+			<div class="col-sm-12 fleft"> 
+				<label>{{product.title}}</label>	
+			</div>
+		</div> 
+	</a>
+</div>

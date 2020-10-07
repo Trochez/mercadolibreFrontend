@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product</title>
+</head>
+<body>
+	<div class="whiteb fleft">
+
+		<div class="col-sm-12 fleft">
+
+			<div class="col-sm-8 fleft">
+				<img class="img_single_prd" :src="data.item.picture">
+			</div>
+			<div class="col-sm-4 fleft prd_fts">
+				<div class="col-sm-12">
+					<label class="condition">
+						{{data.item.condition}} - {{data.item.sold_quantity}}
+					</label>
+				</div>
+				<div class="col-sm-12">
+					<h3 class="col-sm-12 singetitle">
+
+						{{data.item.title}}
+						
+					</h3>
+				</div>
+				<div class="col-sm-12">
+					<h1 class="col-sm-12 singleprice">
+
+						{{formatPrice(data.item.price.amount)}}
+						
+					</h1>
+				</div>
+				<div class="col-sm-12">
+					
+					<div class="col-sm-12 btn button">
+						Comprar
+					</div>
+
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-sm-12 fleft desc_div">
+
+			<h2 class="desc_single">Descripción del producto</h2>
+			<p class="desc">
+				{{data.item.description}}
+			</p>
+		</div>
+		
+	</div>
+		
+</body>
+</html>
